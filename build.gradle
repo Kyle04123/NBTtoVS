@@ -43,6 +43,22 @@ apply plugin: "org.jetbrains.kotlin.jvm"
 String gitRevision = "git rev-parse HEAD".execute().text.trim()
 version = mod_version + '+' + gitRevision.substring(0, 10)
 
+ext {
+    minecraft_version = "1.20.1"
+    forge_version = "47.1.3"
+    forge_kotlin_version = "4.11.0"
+    vs2_version = "2.2.0"
+    mod_id = "nbt_to_vs"
+    mod_name = "NBT to VS"
+    mod_license = "MIT"
+    mod_version = "1.0.0"
+    mod_author = "Brokyle22, CommunistFox"
+    mod_description = "A mod for NBT integration with Valkyrien Skies"
+    issue_tracker = "No clue man"
+    homepage = "https://github.com/Kyle04123/NBTtoVS"
+    sources = "https://github.com/Kyle04123/NBTtoVS"
+}
+
 publishing {
     publications {
         mavenCommon(MavenPublication) {
