@@ -17,28 +17,28 @@ logoFile = "icon.png"
 [[dependencies.nbt_to_vs]]
 modId = "forge"
 mandatory = true
-versionRange = "[${forge_version},)"
+versionRange = "[47.3.0,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.nbt_to_vs]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[${minecraft_version},)"
+versionRange = "[1.20.1)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.nbt_to_vs]]
 modId = "valkyrienskies"
 mandatory = true
-versionRange = "[${vs2_version},)"
+versionRange = "[2.3.0,)"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.nbt_to_vs]]
 modId="kotlinforforge"
 mandatory=true
-versionRange="[${forge_kotlin_version},)"
+versionRange="[4.11.0,)"
 ordering="BEFORE"
 side="BOTH"
 
