@@ -15,7 +15,7 @@ class NBTtoVS {
     }
 
     companion object {
-        const val MOD_ID = "NBTtoVS"
+        const val MOD_ID = "nbt_to_vs"
     }
 
     fun readNBT(entity: Entity): String {

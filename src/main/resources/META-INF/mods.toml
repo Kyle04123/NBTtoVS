@@ -4,8 +4,8 @@ issueTrackerURL = "${issue_tracker}"
 license = "${mod_license}"
 
 [[mods]]
-modId = "${NBTtoVS}"
-version = "${1.20.1 (Iteration 1)}"
+modId = "nbt_to_vs"
+version = "${1.20.1}"
 displayName = "${NBTtoVS}"
 displayURL = "${homepage}"
 authors = ["${Brokyle22, CommunistFox}"]
@@ -14,28 +14,28 @@ ${For Warium, cause Novum asked us}
 '''
 logoFile = "icon.png"
 
-[[dependencies.${mod_id}]]
+[[dependencies.nbt_to_vs]]
 modId = "forge"
 mandatory = true
 versionRange = "[${forge_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies.nbt_to_vs]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[${minecraft_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies.nbt_to_vs]]
 modId = "valkyrienskies"
 mandatory = true
 versionRange = "[${vs2_version},)"
 ordering = "AFTER"
 side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies.nbt_to_vs]]
 modId="kotlinforforge"
 mandatory=true
 versionRange="[${forge_kotlin_version},)"
