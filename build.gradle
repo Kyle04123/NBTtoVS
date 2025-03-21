@@ -41,8 +41,8 @@ apply plugin: "org.jetbrains.kotlin.jvm"
 
 ext {
     // Mod metadata
-    mod_id = "nbt_to_vs"
-    mod_name = "NBTtoVS"
+    mod_id = "warium_to_vs"
+    mod_name = "WariumToVS"
     mod_version = "1.0.0"
     mod_author = "Brokyle22, CommunistFox"
     mod_license = "Apache 2.0"
