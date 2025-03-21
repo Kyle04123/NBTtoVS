@@ -6,13 +6,6 @@ import net.minecraft.world.level.block.entity.BlockEntity
 
 class NBTtoVS {
 
-    companion object {
-        const val MOD_ID = "nbt_to_vs"
-
-        // Singleton instance
-        val instance = NBTtoVS()
-    }
-
     //Checks if you even have a blockEntity
     private fun isBlockEntity(world: Level, pos: BlockPos): Boolean{
         val blockEntity: BlockEntity? = world.getBlockEntity(pos)
