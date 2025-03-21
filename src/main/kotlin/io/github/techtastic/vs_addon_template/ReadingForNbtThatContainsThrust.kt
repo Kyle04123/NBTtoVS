@@ -11,6 +11,7 @@ class NBTtoVS {
         val blockEntity: BlockEntity? = world.getBlockEntity(pos)
         return blockEntity != null
     }
+
     //Main function you want to call, the rest are helpers
     fun containsNBTtagThrust(world: Level, pos: BlockPos): Boolean {
         if (isBlockEntity(world, pos)) {

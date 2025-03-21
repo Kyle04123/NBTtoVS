@@ -39,7 +39,27 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: "org.jetbrains.kotlin.jvm"
 
+ext {
+    // Mod metadata
+    mod_id = "nbt_to_vs"
+    mod_name = "NBTtoVS"
+    mod_version = "1.0.0"
+    mod_author = "Brokyle22, CommunistFox"
+    mod_license = "Apache 2.0"
+    mod_description = "For Warium, at the bequest of Novum"
+    issue_tracker = "https://github.com/Kyle04123/NBTtoVS/issues"
+    homepage = "https://github.com/Kyle04123/NBTtoVS"
+    sources = "https://github.com/Kyle04123/NBTtoVS"
 
+    // Versions and other dependencies
+    minecraft_version = "1.20.1"
+    forge_version = "47.4.0"
+    forge_kotlin_version = "1.9.22"
+    vs_core_version = "1.0.0"
+    vs2_version = "2.3.0"
+}
+
+// Git-related properties
 String gitRevision = "git rev-parse HEAD".execute().text.trim()
 version = mod_version + '+' + gitRevision.substring(0, 10)
 
