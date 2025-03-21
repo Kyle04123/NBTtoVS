@@ -2,24 +2,21 @@ package io.github.techtastic.NBTtoVS
 
 import net.minecraft.core.BlockPos
 import net.minecraft.world.level.Level
-import net.minecraft.world.level.block.entity.BlockEntity
 
 class NBTtoVS {
 
-    //Checks if you even have a blockEntity
-    private fun isBlockEntity(world: Level, pos: BlockPos): Boolean{
-        val blockEntity: BlockEntity? = world.getBlockEntity(pos)
-        return blockEntity != null
-    }
+    //Returns boolean depending if the NBT tag is set to the correct boolean value
+    private fun containsNBTtagBooleanCheck(world: Level, pos: BlockPos, tag: String): Boolean {
+        val nbtString = getBlockEntityNBT(world, pos)
 
-    //Main function you want to call, the rest are helpers
-    fun containsNBTtagThrust(world: Level, pos: BlockPos): Boolean {
-        if (isBlockEntity(world, pos)) {
-            return getBlockEntityNBT(world, pos).contains("Thrust", ignoreCase = true)
+        if (nbtString.contains(tag, ignoreCase = true)) {
+            val regex = Regex("$tag:(\\s*)true|$tag:(\\s*)1b", RegexOption.IGNORE_CASE)
+            return regex.containsMatchIn(nbtString)
         }
-        return false;
-    }
 
+        return false
+    }
+    //Grabs the block entity NBT
     private fun getBlockEntityNBT(world: Level, pos: BlockPos): String {
         val blockEntity = world.getBlockEntity(pos)
 
