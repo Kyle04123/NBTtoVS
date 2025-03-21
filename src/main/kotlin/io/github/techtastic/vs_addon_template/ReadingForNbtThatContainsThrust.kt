@@ -9,7 +9,7 @@ class NBTtoVS {
     companion object {
         const val MOD_ID = "nbt_to_vs"
 
-        // Singleton instance (if needed)
+        // Singleton instance
         val instance = NBTtoVS()
     }
 

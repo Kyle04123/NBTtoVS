@@ -1,10 +1,9 @@
 package io.github.techtastic.vs_addon_template
 
-import net.minecraftforge.eventbus.api.ModEventBus
 import net.minecraftforge.eventbus.api.SubscribeEvent
 import net.minecraftforge.fml.common.Mod
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetup
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetup
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
@@ -20,12 +19,12 @@ object Initializer {
     }
 
     @SubscribeEvent
-    fun commonSetup(event: FMLCommonSetup) {
+    fun commonSetup(event: FMLCommonSetupEvent) {
         LOGGER.info("Common Setup for $MOD_ID")
     }
 
     @SubscribeEvent
-    fun clientSetup(event: FMLClientSetup) {
+    fun clientSetup(event: FMLClientSetupEvent) {
         LOGGER.info("Client Setup for $MOD_ID")
     }
 
