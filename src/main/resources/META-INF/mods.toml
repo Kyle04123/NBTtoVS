@@ -1,7 +1,7 @@
 modLoader = "kotlinforforge"
-loaderVersion = "[47.2.0,)"
-issueTrackerURL = ""
-license = "Apache 2.0"
+loaderVersion = "[4.11.0,)"
+issueTrackerURL = "${issue_tracker}"
+license = "${mod_license}"
 
 [[mods]]
 modId = "nbt_to_vs"
@@ -24,14 +24,14 @@ side = "BOTH"
 [[dependencies.nbt_to_vs]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1)"
+versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.nbt_to_vs]]
 modId = "valkyrienskies"
 mandatory = true
-versionRange = "[2.3.0,)"
+versionRange = "[2.3.0-beta.5,)"
 ordering = "AFTER"
 side = "BOTH"
 
